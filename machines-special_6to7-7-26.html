@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T I — Machine &amp; Blades — 6to7-7-26</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f5f5f5;color:#222;font-size:14px;line-height:1.4}
+  .hdr{background:#fff;padding:14px 16px;border-bottom:1px solid #e8e8e8;position:sticky;top:0;z-index:10}
+  .hdr h1{font-size:18px;font-weight:700;color:#111}
+  .hdr .sub{font-size:12px;color:#777;margin-top:2px}
+  .grid{padding:8px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;max-width:720px;margin:0 auto}
+  @media(min-width:600px){.grid{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+  .card{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.06);display:flex;flex-direction:column}
+  .card .img{width:100%;aspect-ratio:1/1;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+  .card .img img{max-width:100%;max-height:100%;object-fit:contain}
+  /* Wrapper keeps card heights aligned whether or not description is present */
+  .card .body{min-height:62px;display:flex;flex-direction:column}
+  /* Item name — large, bold, readable on mobile */
+  .card .nm{font-size:17px;font-weight:800;padding:12px 14px 4px;color:#000;line-height:1.25}
+  /* Description — distinct from name: dark blue, smaller but clearly legible, slightly italic */
+  .card .ds{font-size:13px;font-weight:600;padding:0 14px 6px;color:#1a3a6e;line-height:1.3;font-style:italic}
+  /* Price — even larger, accent color for emphasis */
+  .card .pr{font-size:24px;font-weight:900;padding:6px 14px 14px;color:#b94c2a;line-height:1.1;letter-spacing:-0.3px}
+  .card .pr .rs{font-size:17px;font-weight:700;color:#8a6d0a;margin-right:2px}
+  .ftr{text-align:center;padding:20px 10px 40px;font-size:12px;color:#999}
+  .call{background:#25D366;color:#fff;padding:12px 16px;margin:12px auto 4px;border-radius:6px;text-align:center;font-size:15px;font-weight:600;text-decoration:none;display:block;max-width:400px}
+  
+  .gold-strip{background:#c89b2a;color:#fff;font-weight:700;padding:8px 12px;text-align:center;letter-spacing:0.05em;font-size:13px}
+  .moq-line{font-size:12px;color:#5a3e00;font-weight:700;padding:0 14px 4px;display:none}
+  .cash-chip{display:none;background:#c89b2a;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;letter-spacing:0.04em;margin-left:6px;vertical-align:middle}
+  .moq-line.has,.cash-chip.has{display:inline-block}
+  .card.special{border:1px solid #c89b2a}
+  
+  @media(min-width:600px){
+    .card .body{min-height:58px}
+    .card .nm{font-size:18px}
+    .card .ds{font-size:14px}
+    .card .pr{font-size:26px}
+    .card .pr .rs{font-size:19px}
+  }
+</style>
+</head>
+<body>
+<div class="gold-strip">★ Special pricing — by invitation only</div>
+<div class="hdr">
+  <h1>Machine &amp; Blades</h1>
+  <div class="sub">T I · Kolkata · Arrivals 6to7-7-26</div>
+</div>
+<div class="grid">
+  <div class="card" data-name="BOSCH GSB 600W DRILL" data-normal="2700" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f6812ad6113e9399e0/6454bc916bc2f_6812_311.jpg?v=1726923627658" alt="BOSCH GSB 600W DRILL" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">BOSCH GSB 600W DRILL<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">2,700</span></div>
+  </div>
+  <div class="card" data-name="AWEZAAR 10MM 2310 DRILL" data-normal="680" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/AWEZAAR_10MM_2310_DRILL_4ixyft.jpg" alt="AWEZAAR 10MM 2310 DRILL" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">AWEZAAR 10MM 2310 DRILL<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">680</span></div>
+  </div>
+  <div class="card" data-name="ADVANCE 26MM HAMMER BLUE" data-normal="2750" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/ADVANCE_26MM_HAMMER_BLUE_l4rrpg.jpg" alt="ADVANCE 26MM HAMMER BLUE" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ADVANCE 26MM HAMMER BLUE<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">2,750</span></div>
+  </div>
+  <div class="card" data-name="YASH 2FC" data-normal="48" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f16168a54a36e5ef87/6454bc916bc2f_1616_502.jpg?v=1728998217675" alt="YASH 2FC" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">YASH 2FC<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">48</span></div>
+  </div>
+  <div class="card" data-name="1FC YASH" data-normal="48" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f1723a631765549f97/6454bc916bc2f_1723_616.jpg?v=1729689524439" alt="1FC YASH" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">1FC YASH<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">48</span></div>
+  </div>
+  <div class="card" data-name="HI-MAX 7KG 835 HAMMER" data-normal="4500" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f7896e1efebd987027/6454bc916bc2f_7896_395.jpg?v=1727528459733" alt="HI-MAX 7KG 835 HAMMER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">HI-MAX 7KG 835 HAMMER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">4,500</span></div>
+  </div>
+  <div class="card" data-name="ICAN AL TCT 10&quot;" data-normal="1050" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f28471b127a4414ff0/6454bc916bc2f_2847_1920.jpg?v=1746193576038" alt="ICAN AL TCT 10&quot;" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ICAN AL TCT 10&quot;<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,050</span></div>
+  </div>
+  <div class="card" data-name="SDS CHISEL FLAT XTRA POWER" data-normal="90" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f75361da459436590./6454bc916bc2f_7536_415.jpg?v=1727963508649" alt="SDS CHISEL FLAT XTRA POWER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">SDS CHISEL FLAT XTRA POWER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">90</span></div>
+  </div>
+  <div class="card" data-name="SDS CHISEL POINTED XTRA POWER" data-normal="90" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f69151da45942b0c1f/6454bc916bc2f_6915_416.jpg?v=1727963508650" alt="SDS CHISEL POINTED XTRA POWER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">SDS CHISEL POINTED XTRA POWER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">90</span></div>
+  </div>
+  <div class="card" data-name="810 CHISEL FLAT XTRA POWER" data-normal="140" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f759448c763af4a768/6454bc916bc2f_7594_2318.jpg?v=1755692476932" alt="810 CHISEL FLAT XTRA POWER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">810 CHISEL FLAT XTRA POWER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">140</span></div>
+  </div>
+  <div class="card special" data-name="ESTINO 7KG HAMMER" data-normal="3350" data-special="3200" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/ESTINO_7KG_HAMMER_l4u4op.jpg" alt="ESTINO 7KG HAMMER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ESTINO 7KG HAMMER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">3,200</span></div>
+  </div>
+  <div class="card" data-name="AGNI PRESSURE CAR WASHER" data-normal="4000" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f910815f8fd14a40ff/6454bc916bc2f_9108_2595.jpg?v=1763210005163" alt="AGNI PRESSURE CAR WASHER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">AGNI PRESSURE CAR WASHER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">4,000</span></div>
+  </div>
+  <div class="card" data-name="ELECTRO 2-20 20MM HAMMER" data-normal="1650" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/ELECTRO_2-20_20MM_HAMMER_ccf8p0.jpg" alt="ELECTRO 2-20 20MM HAMMER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ELECTRO 2-20 20MM HAMMER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,650</span></div>
+  </div>
+  <div class="card" data-name="PRITHVI CM4 MARBLE CUTTER" data-normal="1700" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f38731c5da2d253407/6454bc916bc2f_3873_63.jpg?v=1724754896784" alt="PRITHVI CM4 MARBLE CUTTER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">PRITHVI CM4 MARBLE CUTTER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,700</span></div>
+  </div>
+  <div class="card" data-name="PRITHVI PREMIUM PPR13RE DRILL" data-normal="1750" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f789568d883b42c6ef/6454bc916bc2f_7895_387.jpg?v=1727526253555" alt="PRITHVI PREMIUM PPR13RE DRILL" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">PRITHVI PREMIUM PPR13RE DRILL<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,750</span></div>
+  </div>
+  <div class="card" data-name="PRITHVI PREMIUM 3-26 HAMMER" data-normal="4300" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f88531000009ae6397/6454bc916bc2f_8853_2255.jpg?v=1753275403589" alt="PRITHVI PREMIUM 3-26 HAMMER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">PRITHVI PREMIUM 3-26 HAMMER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">4,300</span></div>
+  </div>
+  <div class="card" data-name="HI-MAX SCREW DRIVER" data-normal="1150" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f9132014e7a9aaa77/6454bc916bc2f_913_1697.jpg?v=1743600965438" alt="HI-MAX SCREW DRIVER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">HI-MAX SCREW DRIVER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,150</span></div>
+  </div>
+  <div class="card" data-name="BOSCH GREY TOOLS CHOPSAW" data-normal="9300" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f9204c6a98ced86c40/6454bc916bc2f_9204_2679.jpg?v=1767356462754" alt="BOSCH GREY TOOLS CHOPSAW" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">BOSCH GREY TOOLS CHOPSAW<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">9,300</span></div>
+  </div>
+  <div class="card" data-name="BOSCH GREY TOOLS 13MM DRILL" data-normal="2400" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f92038a44f3d25090f/6454bc916bc2f_9203_2677.jpg?v=1767356424375" alt="BOSCH GREY TOOLS 13MM DRILL" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">BOSCH GREY TOOLS 13MM DRILL<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">2,400</span></div>
+  </div>
+  <div class="card" data-name="BOSCH GREY TOOLS ANGLE GRINDER" data-normal="1750" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f8585e3e55f8f416e0/6454bc916bc2f_8585_2676.jpg?v=1767356424374" alt="BOSCH GREY TOOLS ANGLE GRINDER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">BOSCH GREY TOOLS ANGLE GRINDER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,750</span></div>
+  </div>
+  <div class="card" data-name="ENDICO PARA12 ROUTER" data-normal="4600" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f85a84bc6e86e1b8/6454bc916bc2f_85_306.jpg?v=1728306121986" alt="ENDICO PARA12 ROUTER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ENDICO PARA12 ROUTER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">4,600</span></div>
+  </div>
+  <div class="card" data-name="CARPENTER 200A WELDING MACHINE" data-normal="3500" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/CARPENTER_200A_WELDING_MACHINE_lheba7.jpg" alt="CARPENTER 200A WELDING MACHINE" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">CARPENTER 200A WELDING MACHINE<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">3,500</span></div>
+  </div>
+  <div class="card" data-name="ADVANCE 250A WELDING MACHINE" data-normal="4900" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/ADVANCE_250A_WELDING_MACHINE_lhdy6u.jpg" alt="ADVANCE 250A WELDING MACHINE" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ADVANCE 250A WELDING MACHINE<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">4,900</span></div>
+  </div>
+  <div class="card" data-name="IWELD 250A WELDING MACHINE" data-normal="4900" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://pwhyyovahzshowhxymad.supabase.co/storage/v1/object/public/ti-item-photos/IWELD_250A_WELDING_MACHINE_lhg3s5.jpg" alt="IWELD 250A WELDING MACHINE" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">IWELD 250A WELDING MACHINE<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">4,900</span></div>
+  </div>
+  <div class="card" data-name="AUTO POWER 13MM DRILL" data-normal="900" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f62551823c0f89a8a8/6454bc916bc2f_6255_2016.jpg?v=1748007672395" alt="AUTO POWER 13MM DRILL" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">AUTO POWER 13MM DRILL<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">900</span></div>
+  </div>
+  <div class="card" data-name="BOSCH GCO220 CHOPSAW" data-normal="11300" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f1681787e8af6abdf./6454bc916bc2f_1681_112.jpg?v=1725024178247" alt="BOSCH GCO220 CHOPSAW" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">BOSCH GCO220 CHOPSAW<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">11,300</span></div>
+  </div>
+  <div class="card" data-name="ESTINO 20MM HAMMER" data-normal="1650" data-special="" data-moq-cartons="" data-moq-pcs="" data-cash-only="">
+    <div class="img"><img src="https://vyapar-catalog.vypcdn.in/6454bc916bc2f/6454bc916bc2f64981587ccee1d8a8/6454bc916bc2f_6498_1464.jpg?v=1739514829652" alt="ESTINO 20MM HAMMER" loading="lazy"></div>
+    <div class="body">
+      <div class="nm">ESTINO 20MM HAMMER<span class="cash-chip">CASH ONLY</span></div>
+      
+      <div class="moq-line"></div>
+    </div>
+    <div class="pr"><span class="rs">₹</span><span class="pr-num">1,650</span></div>
+  </div>
+</div>
+<a class="call" href="https://wa.me/917439643915?text=Hi%20T%20I%2C%20I%20want%20to%20order%3A%20">📱 Order on WhatsApp</a>
+<div class="ftr">Total 27 items · Reply on WhatsApp to place order</div>
+
+</body>
+</html>
